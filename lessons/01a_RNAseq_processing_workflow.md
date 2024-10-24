@@ -68,9 +68,9 @@ Generally single-end sequencing is sufficient unless it is expected that the rea
 
 Illumina sequencing technology uses a sequencing-by-synthesis approach. **To explore sequencing by synthesis in more depth, please watch [this linked video on Illumina's YouTube channel](https://www.youtube.com/watch?v=fCd6B5HRaZ8).**
 
-We have privided a brief explanation of the steps below:
+We have provided a brief explanation of the steps below:
 
-***Cluster growth***: The DNA fragments in the cDNA library are denatured and hybridized to the glass flowcell (adapter complementarity). Each fragment is then clonally amplified, forming a cluster of double-stranded DNA. This step is necessary to ensure that the sequencing signal will be strong enough to be detected/captured unambiguously for each base of each fragment.
+***Cluster growth***: The DNA fragments in the cDNA library are denatured and hybridized to the glass flowcell (adapter complimentarity). Each fragment is then clonally amplified, forming a cluster of double-stranded DNA. This step is necessary to ensure that the sequencing signal will be strong enough to be detected/captured unambiguously for each base of each fragment.
 
 -   **Number of clusters \~= Number of reads**
 
