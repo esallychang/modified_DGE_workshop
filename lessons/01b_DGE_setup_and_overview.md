@@ -161,7 +161,7 @@ tx2gene <- read.delim("tx2gene_grch38_ens94.txt")
 tx2gene %>% View()
 ```
 
-**`tx2gene`** is a three-column **data frame linking transcript ID (column 1) to gene ID (column 2)** to gene symbol (column 3). We will take the first two columns as input to `tximport`. The **column names are not relevant, but the column order is (i.e transcript ID must be first).**
+**`tx2gene`** is a three-column **data frame linking an Ensembl transcript ID (column 1) to Ensembl Gene ID (column 2)** to Gene Symbol (column 3). We will take the first two columns as input to `tximport`. The **column names are not relevant, but the column order is (i.e transcript ID must be first).**
 
 Now we are ready to **run `tximport`**.
 
