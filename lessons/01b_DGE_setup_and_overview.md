@@ -86,6 +86,11 @@ rm data.zip
 
 -   [Annotation file](https://github.com/hbctraining/DGE_workshop_salmon/raw/master/data/tx2gene_grch38_ens94.txt)
 
+``` bash
+# you can also use wget for this 
+wget https://github.com/hbctraining/DGE_workshop_salmon/raw/master/data/tx2gene_grch38_ens94.txt
+```
+
 Finally, go to the `File` menu and select `New File`, then select `R Script`. This should open up a script editor in the top left hand corner. This is where we will be typing and saving all commands required for this analysis. In the script editor type in header lines:
 
 ```         
@@ -115,7 +120,7 @@ library(ggrepel)
 
 ### Loading data
 
-The main output of Salmon is a `quant.sf` file, and we have one of these for each individual sample in our dataset. An screenshot of the file is displayed below:
+The main output of Salmon is a `quant.sf` file, and we have one of these for each individual sample in our dataset. An screenshot of the file (FOR WHICH SAMPLE) is displayed below:
 
 <img src="../img/quant_screenshot.png" width="400"/>
 
