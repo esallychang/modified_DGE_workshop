@@ -188,6 +188,17 @@ txi <- tximport(files, type="salmon", tx2gene=tx2gene[,c("tx_id", "ensgene")], c
 
 > **An additional argument for `tximport`**: When performing your own analysis you may find that the reference transcriptome file you obtain from Ensembl will have version numbers included on your identifiers (i.e ENSG00000265439.2). This will cause a discrepancy with the tx2gene file since the annotation databases don't usually contain version numbers (i.e ENSG00000265439). To get around this issue you can use the argument `ignoreTxVersion    = TRUE`. The logical value indicates whether to split the tx id on the '.' character to remove version information, for easier matching.
 
+As `tximport` is running, you should see the following:
+
+``` bash
+reading in files with read_tsv
+1 2 3 4 5 6 7 8 
+transcripts missing from tx2gene: 243
+summarizing abundance
+summarizing counts
+summarizing length
+```
+
 ### Viewing data
 
 The `txi` object is a simple list containing matrices of the abundance, counts, length. Another list element 'countsFromAbundance' carries through the character argument used in the tximport call. The length matrix contains the average transcript length for each gene which can be used as an offset for gene-level analysis.
