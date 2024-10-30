@@ -193,7 +193,7 @@ As `tximport` is running, you should see the following:
 ``` bash
 reading in files with read_tsv
 1 2 3 4 5 6 7 8 
-transcripts missing from tx2gene: 243
+transcripts missing from tx2gene: 243 #is this a problem?
 summarizing abundance
 summarizing counts
 summarizing length
