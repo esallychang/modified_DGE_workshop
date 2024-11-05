@@ -1,7 +1,7 @@
 ---
 title: "Gene-level differential expression analysis"
-author: "Meeta Mistry, Radhika Khetani, Mary Piper"
-date: "May 15, 2020"
+author: "Meeta Mistry, Radhika Khetani, Mary Piper, edited by Sally Chang at NICHD"
+date: "Edits started November 5th, 2024"
 ---
 
 ***
