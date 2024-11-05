@@ -118,9 +118,9 @@ each other to evaluate the relationship between them.
 ``` r
 mean_counts <- apply(data[,6:8], 1, mean)        #The second argument '1' of 'apply' function indicates the function being applied to rows. Use '2' if applied to columns 
 variance_counts <- apply(data[,6:8], 1, var)
-df <- data.frame(mean_counts, variance_counts)
+mov10oe_mean_var_df <- data.frame(mean_counts, variance_counts)
 
-ggplot(df) +
+ggplot(mov10oe_mean_var_df) +
         geom_point(aes(x=mean_counts, y=variance_counts)) + 
         scale_y_log10(limits = c(1,1e9)) +
         scale_x_log10(limits = c(1,1e9)) +
