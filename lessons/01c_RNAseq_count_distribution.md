@@ -276,9 +276,15 @@ more data, you get increasingly precise estimates of group means, and
 ultimately greater confidence in the ability to reliably distinguish
 differences between sample classes**.
 
-Having many replicates allow us to: \* estimate variation for each gene
-\* randomize out unknown covariates \* spot outliers \* improve
-precision of expression and fold-change estimates
+Having many replicates allow us to:
+
+-   estimate variation for each gene
+
+-   randomize out unknown covariates
+
+-   spot outliers
+
+-   improve precision of expression and fold-change estimates
 
 The figure below is taken from a study directly evaluating the
 relationship between sequencing depth and number of replicates on the
