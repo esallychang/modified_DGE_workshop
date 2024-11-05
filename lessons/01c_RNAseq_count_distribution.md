@@ -154,6 +154,20 @@ Evaluate the relationship between mean and variance for the control
 replicates (Irrel_kd samples). Note the differences or similarities in
 the plot compared to the one using the overexpression replicates.
 
+``` r
+## Edit this code from the previous plot to use the irrel_kd samples. What columns are those in?
+
+mean_counts <- apply(data[,6:8], 1, mean) 
+variance_counts <- apply(data[,6:8], 1, var)
+mov10oe_mean_var_df <- data.frame(mean_counts, variance_counts)
+
+ggplot(mov10oe_mean_var_df) +
+        geom_point(aes(x=mean_counts, y=variance_counts)) + 
+        scale_y_log10(limits = c(1,1e9)) +
+        scale_x_log10(limits = c(1,1e9)) +
+        geom_abline(intercept = 0, slope = 1, color="red")
+```
+
 ------------------------------------------------------------------------
 
 ## An alternative: The Negative Binomial distribution
@@ -197,7 +211,7 @@ as is the case with RNA-Seq count data.
     25 samples. If we observed little to no variability between
     replicates, what might this suggest about our samples?
 2.  What type of mean-variance relationship would you expect to see for
-    this dataset?
+    the data set of gene expression produced by the above experiment?
 
 ------------------------------------------------------------------------
 
