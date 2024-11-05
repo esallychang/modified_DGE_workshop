@@ -211,7 +211,7 @@ $names
 [4] "countsFromAbundance"
 ```
 
-We will be using the `txi` object as is, for input into DESeq2 but will save it until the next lesson. **For now let's take a look at the count matrix.** You will notice that there are decimal values, so let's round to the nearest whole number and convert it into a dataframe. We wil save it to a variable called `data` that we can play with.
+We will be using the `txi` object as is, for input into DESeq2 but will save it until the next lesson. **For now let's take a look at the count matrix.** You will notice that there are decimal values, so let's round to the nearest whole number and convert it into a dataframe. We will save it to a variable called `data` that we can play with.
 
 ``` r
 # Look at the counts
