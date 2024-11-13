@@ -208,6 +208,11 @@ Exercise:
 1.  What does the above plot tell you about the similarity of samples?
 2.  Does it fit the expectation from the experimental design?
 3.  What do you think the %variance information (in the axes titles) tell you about the data in the context of the PCA?
+4.  Try plotting a different variable than `sampletype` - did you learn anything new?
+
+``` r
+# Try another varible besides sampletype to color your PCA plot
+```
 
 ------------------------------------------------------------------------
 
