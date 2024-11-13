@@ -95,6 +95,10 @@ When visualizing on PC1 and PC2, we don't see the samples separate by `treatment
 
 We start with the factor `cage`, but the `cage` factor does not seem to explain the variation on PC1 or PC2.
 
+``` r
+# Write code to color the samples by `cage` rather than by `treatment`
+```
+
 <p align="center">
 
 <img src="../img/example_PCA_cage.png" width="600"/>
@@ -102,6 +106,10 @@ We start with the factor `cage`, but the `cage` factor does not seem to explain 
 </p>
 
 Then, we color by the `sex` factor, which appears to separate samples on PC2. This is good information to take note of, as we can use it downstream to account for the variation due to sex in the model and regress it out.
+
+``` r
+# Write code to color the samples by `sex` rather than by `cage`
+```
 
 <p align="center">
 
@@ -122,6 +130,10 @@ It's great that we have been able to identify the sources of variation for both 
 Worrisome about this plot is that we see two samples that do not cluster with the correct strain. This would indicate a likely **sample swap** and should be investigated to determine whether these samples are indeed the labeled strains. If we found there was a switch, we could swap the samples in the metadata. However, if we think they are labeled correctly or are unsure, we could just remove the samples from the dataset.
 
 Still we haven't found if `treatment` is a major source of variation after `strain` and `sex`. So, we explore PC3 and PC4 to see if `treatment` is driving the variation represented by either of these PCs.
+
+``` r
+# Code block for customizing plot to visualize PC3 and PC4 instead
+```
 
 <p align="center">
 
