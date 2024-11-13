@@ -54,7 +54,7 @@ The main "uninteresting" factors often considered during normalization are:
 Several common normalization methods have been developed to account for these differences:
 
 |                                                    Normalization method                                                     |                                                         Description                                                          |          Accounted factors           |                                                 Recommendations for use                                                  |
-|:----------------:|:----------------:|:----------------:|:----------------:|
+|:---------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------:|:------------------------------------:|:------------------------------------------------------------------------------------------------------------------------:|
 |                                                **CPM** (counts per million)                                                 |                                            counts scaled by total number of reads                                            |           sequencing depth           | gene count comparisons between replicates of the same sample group; **NOT for within sample comparisons or DE analysis** |
 |                                         **TPM** (transcripts per kilobase million)                                          |                                counts per length of transcript (kb) per million reads mapped                                 |   sequencing depth and gene length   |       gene count comparisons within a sample or between samples of the same sample group; **NOT for DE analysis**        |
 |                   **RPKM/FPKM** (reads/fragments per kilobase of exon per million reads/fragments mapped)                   |                                                        similar to TPM                                                        |   sequencing depth and gene length   |       gene count comparisons between genes within a sample; **NOT for between sample comparisons or DE analysis**        |
@@ -103,7 +103,7 @@ For each gene, a pseudo-reference sample is created that is equal to the geometr
 For every gene in every sample, the ratios (sample/ref) are calculated (as shown below). Since the majority of genes are not differentially expressed, the majority of genes in each sample should have similar ratios within the sample.
 
 | gene  | sampleA | sampleB | pseudo-reference sample |  ratio of sampleA/ref  | ratio of sampleB/ref  |
-|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
+|:-----:|:-------:|:-------:|:-----------------------:|:----------------------:|:---------------------:|
 | EF2A  |  1489   |   906   |         1161.5          | 1489/1161.5 = **1.28** | 906/1161.5 = **0.78** |
 | ABCD1 |   22    |   13    |          16.9           |   22/16.9 = **1.30**   |  13/16.9 = **0.77**   |
 | MEFV  |   793   |   410   |          570.2          |  793/570.2 = **1.39**  | 410/570.2 = **0.72**  |
