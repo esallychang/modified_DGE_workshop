@@ -292,6 +292,10 @@ Overall, we observe pretty high correlations across the board ( \> 0.999) sugges
 >
 > Curious about all of the available [color palettes offered by the RColorBrewer package](http://www.r-graph-gallery.com/38-rcolorbrewers-palettes/)? Try typing in your console `display.brewer.all()` and see what happens!
 
+**Exercise:**
+
+-   Modify three aspects of your heatmap and share with the class!
+
 ------------------------------------------------------------------------
 
 [Next Lesson](04a_design_formulas.md)
