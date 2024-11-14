@@ -57,7 +57,7 @@ To normalize the count data, DESeq2 calculates size factors for each sample usin
 
 Let's take a quick look at size factor values we have for each sample:
 
-```         
+``` r
 ## Check the size factors
 sizeFactors(dds)
 
