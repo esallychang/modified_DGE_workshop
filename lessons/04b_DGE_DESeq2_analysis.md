@@ -187,12 +187,6 @@ The **strength of the shrinkage for each gene depends on**:
 
 ### Interpretation of the dispersion plot
 
-To create this plot with your data, you use the function:
-
-``` r
-plotDispEsts(dds)
-```
-
 **This is a good plot to examine to ensure your data is a good fit for the DESeq2 model.** Evaluate the plot to see if:
 
 -   The data to generally scatter around the curve, with the dispersion decreasing with increasing mean expression levels.
