@@ -41,7 +41,7 @@ Differential expression analysis with DESeq2 involves multiple steps as displaye
 
 Prior to performing the differential expression analysis, it is a good idea to know what **sources of variation** are present in your data, either by exploration during the QC and/or prior knowledge. Once you know the major sources of variation, you can remove them prior to analysis or control for them in the statistical model by including them in your **design formula**.
 
-**This step is critical as each additional factor in your design formula reduces your power. HOWEVER, failing to include important sources of variation can give you innacurate results.**
+**This step is critical as each additional factor in your design formula reduces your power. HOWEVER, failing to include important sources of variation can give you inaccurate results.**
 
 ### Design formula
 
