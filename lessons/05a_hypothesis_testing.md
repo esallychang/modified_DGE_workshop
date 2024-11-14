@@ -42,13 +42,19 @@ After the model is fit, coefficients are estimated for each sample group along w
 
 ## Hypothesis testing
 
-The first step in hypothesis testing is to set up a **null hypothesis** for each gene. In our case, the null hypothesis is that there is **no differential expression across the two sample groups (LFC == 0)**. Notice that we can do this without observing any data, because it is based on a thought experiment. Second, we use a statistical test to determine if based on the observed data, the null hypothesis is true.
+The first step in hypothesis testing is to set up a **null hypothesis** for each gene. In our case, the null hypothesis is that there is **no differential expression across the two sample groups (LFC == 0)**. ***Notice that we can do this without observing any data, because it is based on a thought experiment - NEEDS MORE EXPLANATION.*** Second, we use a statistical test to determine if based on the observed data, the null hypothesis is true.
 
 ### Wald test
 
 In DESeq2, the **Wald test is the default used for hypothesis testing when comparing two groups**. The Wald test is a test usually performed on parameters that have been estimated by maximum likelihood. In our case we are testing each gene model coefficient (LFC) which was derived using parameters like dispersion, which were estimated using maximum likelihood. If there are more than 2 sample classes within a variable (for example, if you had low, medium, and high treatment levels) then DESeq2 will generate two pairwise comparisons when low is set as the control (see [here](https://hbctraining.github.io/DGE_workshop_salmon_online/lessons/05b_wald_test_results.html) for more info): low vs. medium, and low vs. high.
 
-DESeq2 implements the Wald test by: \* Taking the LFC and dividing it by its standard error, resulting in a z-statistic \* The z-statistic is compared to a standard normal distribution, and a p-value is computed reporting the probability that a z-statistic at least as extreme as the observed value would be selected at random \* If the p-value is small we reject the null hypothesis and state that there is evidence against the null (i.e. the gene is differentially expressed).
+**DESeq2 implements the Wald test by:**
+
+-   Taking the LFC and dividing it by its standard error, resulting in a z-statistic
+
+-   The z-statistic is compared to a standard normal distribution, and a p-value is computed reporting the probability that a z-statistic at least as extreme as the observed value would be selected at random
+
+-   If the p-value is small we reject the null hypothesis and state that there is evidence against the null (i.e. the gene is differentially expressed).
 
 The **model fit and Wald test were already run previously as part of the `DESeq()` function**:
 
