@@ -134,7 +134,7 @@ DESeq2 estimates the dispersion for each gene based on the gene's expression lev
 
 </p>
 
-> *In this plot we have dispersion on the y-axis and mean normalized counts on the x-axis. Each black dot represents a gene and its intial maximum likelihood dispersion estimate (MLE) given the observed data. Simply looking at the trend of black dots, we observe an inverse relationship between mean and dispersion. More detail on the fitted red line and blue dots will be decribed later in this lesson.*
+> *In this plot we have dispersion on the y-axis and mean normalized counts on the x-axis. Each black dot represents a gene and its initial maximum likelihood dispersion estimate (MLE) given the observed data. Simply looking at the trend of black dots, we observe an inverse relationship between mean and dispersion. More detail on the fitted red line and blue dots will be described later in this lesson.*
 
 Since we have only a few (3-6) replicates per group, the **dispersion estimates for each gene are often unreliable**. As we walk through the next few steps, we will discuss how this issue is resolved.
 
