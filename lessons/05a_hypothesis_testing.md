@@ -70,7 +70,7 @@ dds <- DESeq(dds)
 
 ### Likelihood ratio test (LRT)
 
-DESeq2 also offers the Likelihood Ratio Test (LRT) as an alternative **hypothesis test for when we are comparing more than two sample classes**. Rather than evaluating whether a gene's expression is up- or down-regulated in one class compared to another, the LRT **identifies genes that are changing in expresssion in any direction across the different sample classes**.
+DESeq2 also offers the Likelihood Ratio Test (LRT) as an alternative **hypothesis test for when we are comparing more than two sample classes**. Rather than evaluating whether a gene's expression is up- or down-regulated in one class compared to another, the LRT **identifies genes that are changing in expression in any direction across the different sample classes**.
 
 *How does this compare to the Wald test?*
 
