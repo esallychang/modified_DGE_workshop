@@ -163,7 +163,7 @@ View()
 The `DESeq()` function calculates, for every gene and for every sample, a diagnostic test for outliers called Cook’s distance. Cook’s distance is a measure of how much a single sample is influencing the fitted coefficients for a gene, and a large value of Cook’s distance is intended to indicate an outlier count. Genes which contain a Cook’s distance above a threshold are flagged, however at least 3 replicates are required for flagging, as it is difficult to judge which sample might be an outlier with only 2 replicates. We can turn off this filtering by using the `cooksCutoff` argument in the `results()` function.
 
 ``` r
-# Filter genes that have an extreme outlier
+# Filter genes that have an extreme outlier by looking for those rows that have a non-zero base mean but no values for p-value and adjusted p-value
 res_tableOE[which(is.na(res_tableOE$pvalue) & 
                     is.na(res_tableOE$padj) &
                     res_tableOE$baseMean > 0),] %>% 
