@@ -131,7 +131,7 @@ mcols(res_tableOE, use.names=T)
 
 The p-value is a probability value used to determine whether there is evidence to reject the null hypothesis. **A smaller p-value means that there is stronger evidence in favor of the alternative hypothesis**. However, because we are performing a test for each individual gene we need to correct these p-values for multiple testing.
 
-**The `padj` column** in the results table represents the p-value adjusted for multiple testing, and is the most important column of the results. Typically, a threshold such as `padj` \< 0.05 is a good starting point for identifying significant genes. The default method for **multiple test correction** in DESeq2 is an implementation of the Benjamini-Hochberg false discovery rate (FDR). There are other corrections methods available and can be changed by adding the `pAdjustMethod` argument to the `results()` function.
+**The `padj` column** in the results table represents the p-value adjusted for multiple testing, and is the most important column of the results. Typically, a threshold such as `padj` \< 0.05 is a good starting point for identifying significant genes. The default method for **multiple test correction** in DESeq2 is an implementation of the Benjamini-Hochberg false discovery rate (FDR) - see Lesson 05a on Hypothesis Testing for more details. There are other correction methods available and can be changed by adding the `pAdjustMethod` argument to the `results()` function.
 
 ### Gene-level filtering
 
