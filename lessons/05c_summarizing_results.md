@@ -23,6 +23,20 @@ summary(res_tableOE, alpha = 0.05)
 
 In addition to the number of genes up- and down-regulated at the default threshold, **the function also reports the number of genes that were tested (genes with non-zero total read count), and the number of genes not included in multiple test correction due to a low mean count**.
 
+```         
+out of 38903 with nonzero total read count
+adjusted p-value < 0.05
+LFC > 0 (up)       : 2004, 5.2%
+LFC < 0 (down)     : 2770, 7.1%
+outliers [1]       : 28, 0.072%
+low counts [2]     : 20580, 53%
+(mean count < 13)
+[1] see 'cooksCutoff' argument of ?results
+[2] see 'independentFiltering' argument of ?results
+```
+
+**Based on the contrast we set up - how would you interpret "upregulated"? In which group are those genes upregulated in?**
+
 ## Extracting significant differentially expressed genes
 
 Let's first create variables that contain our threshold criteria. We will only be using the adjusted p-values in our criteria:
