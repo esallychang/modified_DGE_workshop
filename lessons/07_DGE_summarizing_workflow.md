@@ -34,7 +34,7 @@ We have detailed the various steps in a differential expression analysis workflo
     # Check that the row names of the metadata equal the column names of the **raw counts** data
     all(colnames(txi$counts) == rownames(metadata))
 
-    # Create DESeq2Dataset object
+    # Create DESeq2Dataset object, specifying the design of the experiment
     dds <- DESeqDataSetFromTximport(txi, 
                     colData = metadata, 
                     design = ~ condition)
