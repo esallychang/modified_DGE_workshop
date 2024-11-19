@@ -59,7 +59,7 @@ res_tableOE_tb <- res_tableOE %>%
 Now we can subset that table to only keep the significant genes using our pre-defined thresholds:
 
 ``` r
-# Subset the tibble to keep only significant genes
+# Subset the tibble to keep only significant genes - how can we tell that this extracted the right number of genes? 
 sigOE <- res_tableOE_tb %>%
         dplyr::filter(padj < padj.cutoff)
 ```
