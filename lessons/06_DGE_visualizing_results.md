@@ -220,6 +220,11 @@ ggplot(res_tableOE_tb, aes(x = log2FoldChange, y = -log10(padj))) +
 > The Bioconductor package [`DEGreport`](https://bioconductor.org/packages/release/bioc/html/DEGreport.html) can use the DESeq2 results output to make the top20 genes and the volcano plots generated above by writing much fewer lines of code. The caveat of these functions is you lose the ability to customize plots as we have demonstrated above.
 >
 > If you are interested, the example code below shows how you can use DEGreport to create similar plots. **Note that this is example code, do not run.**
+>
+> ``` r
+> # Install DEGreport - I think this took too much memory to install right away. 
+> BiocManager::install("DEGreport")
+> ```
 
 > ``` r
 > DEGreport::degPlot(dds = dds, res = res, n = 20, xs = "type", group = "condition") # dds object is output from DESeq2
