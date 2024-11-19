@@ -56,7 +56,7 @@ normalized_counts <- normalized_counts %>%
 normalized_counts 
 ```
 
-> **NOTE:** A possible alternative to the above:
+> **NOTE:** A possible alternative to the above (have students come up with this more elegant solution):
 >
 > ``` r
 > normalized_counts <- counts(dds, normalized=T) %>% 
@@ -66,7 +66,7 @@ normalized_counts
 >                      left_join(grch38annot, by=c("gene" = "ensgene"))
 > ```
 
-### Plotting signicant DE genes
+### Plotting significant DE genes
 
 One way to visualize results would be to simply plot the expression data for a handful of genes. We could do that by picking out specific genes of interest or selecting a range of genes.
 
