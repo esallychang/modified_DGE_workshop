@@ -118,6 +118,7 @@ library(DOSE)
 library(pathview)
 library(clusterProfiler)
 library(org.Hs.eg.db)
+library(ggnewscale)
 ```
 
 For the different steps in the functional analysis, we require Ensembl and Entrez IDs. We will use the gene annotations that we generated previously to merge with our differential expression results. Before we do that, let's subset our results tibble to only have the genes that were tested, i.e. genes whose p-adjusted values are not equal to "NA".
