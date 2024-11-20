@@ -290,7 +290,8 @@ If you are interested in significant processes that are **not** among the top fi
 ## Subsetting the ego results without overwriting original `ego` variable
 ego2 <- ego
 
-ego2@result <- ego@result[c(1,3,4,8,9),]
+# arbitrary list of specific processes
+ego2@result <- ego@result[c(1,3,4,8,9),] 
 
 ## Plotting terms of interest
 cnetplot(ego2, 
