@@ -155,7 +155,7 @@ sigOE <- dplyr::filter(res_ids, padj < 0.05)
 sigOE_genes <- as.character(sigOE$gene)
 ```
 
-Now we can perform the GO enrichment analysis and save the results:
+Now we can perform GO enrichment for the Biological Process ontology and save the results:
 
 ``` r
 ## Run GO enrichment analysis 
