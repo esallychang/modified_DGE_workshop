@@ -113,7 +113,7 @@ To run clusterProfiler GO over-representation analysis, we will change our gene 
 Then load the following libraries:
 
 ``` r
-# Load libraries
+# Load libraries - these are already installed on the on-demand RStudio instance
 library(DOSE)
 library(pathview)
 library(clusterProfiler)
