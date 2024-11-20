@@ -125,9 +125,6 @@ For the different steps in the functional analysis, we require Ensembl and Entre
 ``` r
 ## Untested genes have padj = NA, so let's keep genes with padj != NA
 res_tableOE_tb_noNAs <- filter(res_tableOE_tb, padj != "NA" )
-
-## Merge the AnnotationHub dataframe with the results 
-res_ids <- left_join(res_tableOE_tb_noNAs, annotations_ahb, by=c("gene"="gene_id")) 
 ```
 
 > ***NOTE:** If you were unable to generate the `annotations_ahb` object, you can download the annotations to your `data` folder by right-clicking [here](https://github.com/hbctraining/DGE_workshop_salmon_online/raw/master/data/annotations_ahb.csv) and selecting "Save link as..."*
@@ -135,9 +132,15 @@ res_ids <- left_join(res_tableOE_tb_noNAs, annotations_ahb, by=c("gene"="gene_id
 ``` bash
 ### Or do it on the command line
 wget https://github.com/hbctraining/DGE_workshop_salmon_online/raw/master/data/annotations_ahb.csv
+```
 
+``` r
 ### To read in the object, you can run the following code: 
 annotations_ahb <- read.csv("annotations_ahb.csv")
+
+
+## Merge the AnnotationHub dataframe with the results 
+res_ids <- left_join(res_tableOE_tb_noNAs, annotations_ahb, by=c("gene"="gene_id")) 
 ```
 
 To perform the over-representation analysis, we need a list of background genes and a list of significant genes. For our background dataset we will use all genes tested for differential expression (all genes in our results table). For our significant gene list we will use genes with p-adjusted values less than 0.05 (we could include a fold change threshold too if we have many DE genes).
