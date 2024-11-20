@@ -199,7 +199,7 @@ pathview(gene.data = foldchanges,
 >            get_kegg_plots)
 > ```
 
-### Incorpororating other gene sets for GSEA
+### Incorporating other gene sets for GSEA
 
 There are other gene sets available for GSEA analysis in clusterProfiler (Disease Ontology, Reactome pathways, etc.). In addition, it is possible to supply your own gene set GMT file, and use that as input.
 
